@@ -1,0 +1,26 @@
+
+<h3>Database status</h3>
+<%= database_working?  %>
+
+<h3>Redis status</h3>
+<%= redis_working? %>
+
+<h3>Environment</h3>
+<dl>
+  <dt> Ruby version</dt>
+  <dd><%= `ruby -v` %></dd>
+
+  <dt> Gem version</dt>
+  <dd><%= `gem -v` %></dd>
+
+  <dt> Bundler version</dt>
+  <dd><%= `bundle -v` %></dd>
+
+  <dt> Rails environment</dt>
+  <dd><%= Rails.env %></dd>
+
+  <dt> RVM vesion</dt>
+  <dd><%= `rvm -v` %></dd>
+</dl>
+
+<%= image_tag('cat.jpeg') %>
